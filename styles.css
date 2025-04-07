@@ -9,9 +9,72 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    list-style: none;
+    color:white;
 }
 
 h1 {
     color: white;
     text-align: center;
+}
+
+.top-menu {
+    color:white;
+    background-color: rgba(83,92,145,0.3);
+}
+
+li {
+    list-style: none;
+}
+
+.game-container {
+    background-color: rgba(83,92,145,0.3);
+    border-radius: 8px;
+    line-height:1.5;
+
+    display:flex;
+    gap:16px;
+    flex-basis:200px;
+    align-items: flex-start;
+
+    padding:8px;
+    margin:16px;
+
+    border: solid 1px rgba(83,92,145,1);
+}
+
+.title-row {
+    display:flex;
+    gap:16px;
+    align-items: center;
+    ;
+}
+
+.game-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.game-img {
+    margin:8px; /* find a better way to top align image and topline of text */
+    border-radius: 8px;
+}
+
+.game-basic-info {
+    display:flex;
+    justify-content:flex-start;
+    gap: 8px;
+}
+
+a {
+    color:rgba(103,122,185,1)
+}
+
+.game-rating {
+    font-size:1.7rem;
+    background-color:rgba(83,92,145,1);
+    border-radius:10%;
+    text-align: center;
+    padding-left:8px;
+    padding-right:8px;
 }
