@@ -1,3 +1,5 @@
+/* dark blue color scheme */
+/* 
 :root {
     --primary: rgb(83, 92, 145);
     --secondary:rgb(146, 144, 195);
@@ -6,6 +8,18 @@
     --white-semi-transparent: rgba(255,255,255,0.5);
     --primary-semi-transparent: rgba(83, 92, 145, 0.5);
     --navbar-color:rgba(83, 92, 145, 0.25);
+  } */
+
+
+  :root {
+    --primary: rgb(46, 138, 153);
+    --secondary:rgb(132, 167, 161);
+    --dark:rgb(31, 110, 140);
+    --background-color: rgb(14, 41, 84);
+    --white-semi-transparent: rgba(255,255,255,0.5);
+    --primary-semi-transparent: rgba(46, 138, 153, 0.5);
+    --secondary-semi-transparent: rgba(132, 167, 161, 0.5);
+    --navbar-color:rgba(46, 138, 153, 0.25);
   }
 
 body {
@@ -67,7 +81,7 @@ a {
     padding:8px;
     margin:16px;
 
-    border: solid 1px var(--primary);
+    border: solid 1px var(--white-semi-transparent);
 }
 
 .title-row {
@@ -96,12 +110,13 @@ a {
 
 .game-rating {
     font-size:1.7rem;
-    background-color:var(--primary);
+    background-color:var(--white-semi-transparent);
     border-radius:10%;
     padding-left: 8px;
     padding-right: 8px;
     /*todo find a better way to center text*/
     padding-top: 4px; 
+    color:var(--dark);
 }
 
 
