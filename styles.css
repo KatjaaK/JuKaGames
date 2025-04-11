@@ -40,13 +40,6 @@ body {
     margin:16px;
 }
 
-.headline {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:32px;
-}
-
 .logo{
     opacity: 0.7;
 }
@@ -66,8 +59,12 @@ a {
     color:var(--white-semi-transparent);
 }
 
-
 .game-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.game-cell {
     background-color: var(--primary-semi-transparent);
     border-radius: 8px;
     line-height:1.5;
@@ -78,7 +75,7 @@ a {
     gap:16px;
     align-items: flex-start;
 
-    padding:8px;
+    padding:16px;
     margin:16px;
 
     border: solid 1px var(--white-semi-transparent);
@@ -87,18 +84,16 @@ a {
 .title-row {
     display:flex;
     gap:16px;
-    align-items: center;
-    ;
+    align-items: top;
 }
 
 .game-title {
     font-size: 2.0rem;
     font-weight: bold;
-    line-height: 1.8;
+    line-height: 1.2;
 }
 
 .game-img {
-    margin:8px; /* find a better way to top align image and topline of text */
     border-radius: 8px;
 }
 
@@ -112,17 +107,22 @@ a {
     font-size:1.7rem;
     background-color:var(--white-semi-transparent);
     border-radius:10%;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding:8px;
     /*todo find a better way to center text*/
-    padding-top: 4px; 
+    padding-top:12px;
     color:var(--dark);
 }
 
 
+@media only screen and (max-width: 850px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media only screen and (max-width: 500px) {
-    .game-container {
+    .game-cell {
         flex-direction: column;
         text-align: center;
         align-items: center;
