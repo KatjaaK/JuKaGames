@@ -1,27 +1,3 @@
-:root {
-    --primary: rgb(46, 138, 153);
-    --secondary:rgb(132, 167, 161);
-    --dark:rgb(31, 110, 140);
-    --background-color: rgb(14, 41, 84);
-    --white-semi-transparent: rgba(255,255,255,0.5);
-    --primary-semi-transparent: rgba(46, 138, 153, 0.5);
-    --secondary-semi-transparent: rgba(132, 167, 161, 0.5);
-    --navbar-color:rgba(46, 138, 153, 0.25);
-  }
-
-  body {
-    height: 100%;
-    margin: 0;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    list-style: none;
-    color:white;
-    height: 100vh;
-    background-color: var(--background-color);
-    background: linear-gradient(180deg, var(--background-color) 0%, var(--dark) 35%, var(--primary) 100%);  
-    font-family: Oxanium;
-}
-
 .game-container {
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -51,9 +27,8 @@
 }
 
 .game-title {
-    font-size: 2.0rem;
-    font-weight: bold;
-    line-height: 1.2;
+    font-size: 3rem;
+    font-family:  "Bungee", sans-serif;
 }
 
 .game-img {
@@ -74,4 +49,12 @@
     padding-left: 8px;
     padding-right: 8px;
     max-height:36px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    .game-container {
+        grid-template-columns: 1fr;
+    }
 }

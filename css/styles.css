@@ -32,7 +32,7 @@ body {
     height: 100vh;
     background-color: var(--background-color);
     background: linear-gradient(180deg, var(--background-color) 0%, var(--dark) 35%, var(--primary) 100%);  
-    font-family: Oxanium;
+    font-family: "Albert Sans";
 }
 
 .navbar {
@@ -49,6 +49,7 @@ h1 {
     margin-top: 32px;
     margin-bottom: 32px;
     font-size: 3rem;
+    font-family: "Pattaya";
 }
 
 li {
@@ -57,80 +58,4 @@ li {
 
 a {
     color:var(--white-semi-transparent);
-}
-
-.game-container {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.game-cell {
-    background-color: var(--primary-semi-transparent);
-    border-radius: 8px;
-    line-height:1.5;
-
-    display:flex;
-    flex:1;
-    flex-basis:auto;
-    gap:16px;
-    align-items: flex-start;
-
-    padding:16px;
-    margin:16px;
-
-    border: solid 1px var(--white-semi-transparent);
-}
-
-.title-row {
-    display:flex;
-    gap:16px;
-    align-items: top;
-}
-
-.game-title {
-    font-size: 2.0rem;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.game-img {
-    border-radius: 8px;
-}
-
-.game-basic-info {
-    display:flex;
-    justify-content:flex-start;
-    gap: 8px;
-}
-
-.game-rating {
-    font-size:1.7rem;
-    background-color:var(--white-semi-transparent);
-    border-radius:10%;
-    color:var(--dark);
-    padding-left: 8px;
-    padding-right: 8px;
-    max-height:36px;
-}
-
-
-@media only screen and (max-width: 850px) {
-    .game-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media only screen and (max-width: 500px) {
-    .game-cell {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        flex:1;
-    }
-    .game-title {
-
-    }
-    h1 {
-    }
 }
